@@ -14,7 +14,6 @@ import java.time.LocalDateTime;
 @ControllerAdvice
 
 public class ControladorExcepciones extends ResponseEntityExceptionHandler {
-
     @ExceptionHandler(ExcepcionPersonalizadaNoEncontrado.class)
     public ResponseEntity<ExcepcionRespuesta>catchDeNoEncontrado(ExcepcionPersonalizadaNoEncontrado ex, WebRequest peticion) {
 //1. Crear un objeto de Excepcion Respuesta
